@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Forms page
+        </title>
+    </head>
+    <body>
+        <h1>Forms test</h1>
+        <form method='POST'>
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+            <hr>
+            {% for line in history_file %}
+            <li>{{ line }}</li>
+            {% endfor %}
+        </form>
+    </body>
+</html>

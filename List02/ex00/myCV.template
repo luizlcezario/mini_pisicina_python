@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Curriculo of {name}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+      box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        --webkit-font-smoothing: antialiased;
+    }
+    header {
+        width: 60%;
+        margin: 20px auto;  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    div {
+        display: flex;
+    }
+    table {
+        width: 100%;
+        margin: 20px;
+        border: 2px solid green;
+        border-collapse: collapse;
+    }
+    main {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        min-width:  200px;
+    }
+    .text {
+        flex-direction: column;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex;">
+        <h1>
+            {name}
+        </h1>
+        <h2 style="margin-left:10px; align-items: center; bottom: 0;">{surname}</h2>
+        </div>
+        <div class="text">
+            <h3>age: {age} </h3>
+            <h3>professional of: {profession}</h3>
+        </div>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th>
+                    <h2>
+                        Carreira
+                    </h2>
+                </th>
+                <th>
+                    <h2>
+                        Skills
+                    </h2>
+                </th>
+            <tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            <h3>
+                                Maquina de misterios S.A
+                            </h3>
+                            Eu era o maior farejador de todo o west dos estados unidos achava qualquer mostro que precisase e pegava muitos criminosos.
+                        </li>
+                        <li>
+                            <h3>
+                                Campeonato de cachorro quente
+                            </h3>
+                             ganhei titulos de maior comelao em todo o pais por isso sou chamado para acabar com comidas em festas por dinheiro.
+                        </li>
+                    </ul>
+                </td>
+                <td  style="border:2px solid; border-color: #424242;">
+                    <ol>
+                        <li>
+                            <div class="skills">
+                                <h3>
+                                    Farejar
+                                </h3>
+                                <h3 style="vertical-align: middle">
+                                    ⭐⭐⭐⭐⭐
+                                </h3>
+            
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills">
+                            <h3>
+                                Comer
+                            </h3>
+                            <h3 style="vertical-align: middle">
+                                ⭐⭐⭐⭐⭐
+                            </h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills">
+                            <h3>
+                                Dormir
+                            </h3>
+                            <h3 style="vertical-align: middle">
+                                ⭐⭐⭐⭐⭐
+                            </h3>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="skills">
+                            <h3>
+                                Latir
+                            </h3>
+                            <h3 style="vertical-align: middle">
+                                ⭐⭐
+                            </h3>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="skills">
+                            <h3>
+                                organizacao
+                            </h3>
+                            <h3 style="vertical-align: middle">
+                                ⭐
+                            </h3>
+                            </div>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </main>
+    
+</body>
+</html>

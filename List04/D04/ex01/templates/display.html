@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Displays{% endblock %}</title>
+</head>
+<body>
+    {% block pagecontent %}
+    <h1> this is my explain about Displays views</h1>
+    <p> To do this you will need to place a templates folder inside your app folder, then write a .html file in their after this you will need to change the views using the template view to create a new class and change the template_fie for the name of the file without the .html </p>
+    <p>after this in yout app urls you will evoke this class and call the method as_view() now is just fix the urls of the core app and voala</p>
+    {% endblock %}
+</body>
+</html>

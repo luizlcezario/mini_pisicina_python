@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="popup.js"></script>
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+      box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        --webkit-font-smoothing: antialiased;
+    }
+    
+    form {
+        width: 40%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center; 
+        align-self: center;
+        
+    }
+    label {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-top:10px;
+    }
+    h1 {
+        text-align: center  ;
+    }
+    button {
+        margin: 10px auto;
+        height: 30px;
+        width: 100px;
+        background: rgb(7, 185, 7);
+        border: 0px;
+        border-radius: 5px;
+        color:white;
+    }
+    button:hover {
+        background: green;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+        <form >
+                <h1>Contact Form</h1>
+                <label for="firstname">
+                    Digit your firstname:
+                    <input type="text" id="firstname">
+                </label>
+            <label for="name">
+                Digit your completed name:
+                <input type="text" id="name">
+            </label>
+            <label for="age">
+                Digit your age:
+                <input type="number" id="age">
+            </label>
+            <label for="phone">
+                Digit your phonenumber:
+                <input type="tel" id="phone">
+            </label>
+            <label for="email">
+                Digit your Email:
+                <input type="email" id="email">
+            </label>
+            <label for="student">
+                Do you Studt in 42 school:
+                <input type="checkbox" id="student">
+            </label>
+            <label class="radio" for="gender">
+                What's yotu gender:
+                <label for="gender_male">male
+                    <input type="radio" id="gender_male" name="gender" value="Male">
+
+                </label>
+                <label for="gender_female">female
+                    <input type="radio" id="gender_female" name="gender" value="Female">
+                    
+
+                </label>
+                <label for="gender_other">others
+                    
+                    <input type="radio" id="gender_other" name="gender" value="Other">
+
+                </label>
+            </label>
+            <button onclick="displayFormContents()" > Enviar </button>
+        </form>
+    </div>
+    </main>
+</body>
+</html>

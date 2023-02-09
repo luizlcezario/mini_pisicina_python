@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}templates{% endblock %}</title>
+</head>
+<body>
+    {% block pagecontent %}
+    <h1> this is my explain about templates</h1>
+    <p>templates are static files base to another in their you will be able to use all variabels that you create on context in the class templateview in the get() method.</p>
+    <p>then you is gone to use if statemets for loop and other thinks</p>
+    {% endblock %}
+</body>
+</html>

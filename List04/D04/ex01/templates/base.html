@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wiki {% block title %} {% endblock %}</title>
+    {% block style %}
+    {% if name == "templates" %}
+        <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    {% else %}
+        <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    {% endif %}
+    {% endblock %}
+
+</head>
+<body>
+    {% include "nav.html" %}
+        {% block pagecontent %}
+        {% endblock %}
+    </body>
+</html>
